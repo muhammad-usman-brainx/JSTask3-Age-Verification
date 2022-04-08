@@ -11,7 +11,7 @@
 
     <div class="container mt-3">
         <h2>TASK Three Age Verification </h2>
-        <form onchange="enableSubmit()" action="">
+        <form action="">
             <div class="mb-3 mt-3">
                 <label for="fname">Enter Date: </label>
                 <input type="number" class="form-control" min="1" max="31" id="date" placeholder="Enter Date: [1-31]" name="day" required>
@@ -24,7 +24,7 @@
                 <label for="email">Enter Year: </label>
                 <input type="number" class="form-control" min="0" max="2022" id="year" placeholder="Enter year : " name="year" required>
             </div>
-            
+            <p id="warning-msg"></p>
           
           <button id="submit-button" type="submit" class="btn btn-primary" onclick="validateForm()">Goo</button>
         </form>
